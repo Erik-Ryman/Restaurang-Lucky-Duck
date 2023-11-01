@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Marck+Script&display=swap");
-
+:root {
+  --maincolor: #ffa14a;
+}
 * {
   font-family: Roboto;
   margin: 0;
@@ -24,7 +26,7 @@ html {
 body {
   display: grid;
   position: relative;
-  background-color: #faf4ea;
+  background-color: #f7f2e8;
   height: 100%;
   grid-gap: 10px;
   grid-template-columns: 25ch 80ch;
@@ -67,7 +69,7 @@ header::before {
   justify-content: center;
   height: 100%;
   width: 100%;
-  border-bottom: #ffa94d solid 4px;
+  border-bottom: --maincolor solid 4px;
   backdrop-filter: blur(5px) brightness(50%);
 }
 
@@ -75,7 +77,7 @@ header::before {
   font-size: 50px;
 
   text-shadow: 2px 2px 5px black;
-  color: #ffa94d;
+  color: var(--maincolor);
   font-family: "Marck Script", cursive;
 }
 
@@ -100,7 +102,7 @@ header::before {
   letter-spacing: 4px;
   font-size: 20px;
   font-weight: 500;
-  background-color: #ffa94d;
+  background-color: var(--maincolor);
   border-radius: 10px;
   cursor: pointer;
 }
@@ -112,7 +114,7 @@ header::before {
 }
 
 .subFilterHeader {
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=ffa94d);
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=ffa14a);
   margin: -2px -6px;
   padding: 2px 6px;
   margin-top: 10px;
@@ -138,7 +140,7 @@ header::before {
 #orderList {
   max-height: 200px;
   overflow-y: auto;
-  border-bottom: #ffa94d solid 4px;
+  border-bottom: --maincolor solid 4px;
   margin-bottom: 4px;
 }
 
@@ -155,7 +157,7 @@ header::before {
   width: 90%;
   margin-bottom: 5px;
   padding: 5px;
-  border: #ffa94d solid 2px;
+  border: --maincolor solid 2px;
   border-radius: 10px;
   background-color: white;
 }
@@ -167,7 +169,7 @@ header::before {
 }
 
 .languageBox:hover {
-  background-color: #ffa94d;
+  background-color: var(--maincolor);
 }
 
 .languageBox > label {
@@ -182,7 +184,7 @@ header::before {
   font-size: 14px;
   margin-bottom: 5px;
   padding: 5px;
-  border: #ffa94d solid 2px;
+  border: --maincolor solid 2px;
   border-radius: 10px;
   background-color: white;
   cursor: pointer;
@@ -195,7 +197,7 @@ input[type="radio"] {
 .basketItem {
   margin-bottom: 4px;
   padding-bottom: 4px;
-  border-bottom: solid #ffa94d 1px;
+  border-bottom: solid --maincolor 1px;
 }
 
 .basketItem:last-child {
@@ -209,7 +211,7 @@ input[type="radio"] {
 }
 
 .basketQuantity:hover {
-  color: #ffa94d;
+  color: var(--maincolor);
 }
 
 li {
@@ -260,7 +262,7 @@ li {
   border: none;
   letter-spacing: 1px;
   font-weight: 500;
-  background-color: #ffa94d;
+  background-color: var(--maincolor);
   border-radius: 6px;
   padding: 5px 12px;
 }

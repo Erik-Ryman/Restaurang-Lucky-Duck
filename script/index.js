@@ -297,7 +297,7 @@ $(document).ready(function () {
 
     checkboxes.each(function () {
       const index = $(this).data("index");
-      filterSelect.eq(index).css("background-color", "#ffa94d");
+      filterSelect.eq(index).css("background-color", "#ffa14a");
     });
   }
 
