@@ -118,7 +118,7 @@
     "img": "./pictures/food/Mussels.webp"
   },
   {
-    "name": { "se": "Grillad Oxfilé", "en": "Grilled Beef Tenderloin" },
+    "name": { "sv": "Grillad Oxfilé", "en": "Grilled Beef Tenderloin" },
     "price": [259],
     "typeOfMeat": ["Beef"],
     "allergies": ["glutenFree"],
